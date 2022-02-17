@@ -1,0 +1,44 @@
+# Register chemicals 
+## Overview
+- Here, you can register chemical reagent data such as...
+    - Structures
+        - Currently compatible with
+            - molecules (SMILES)
+            - polymers (special format)
+    - Properties
+    - Obtained date, company, ...
+
+## Add new reagent
+- Click "Add Chemical" button to create a new record
+![](figs/chem_view.png)
+
+- In this tutorial, we will add the following compound.
+    - Acetone
+    - Obtained from ABC Co.
+    - Boiling point of 56 oC
+
+- The basic properties can be inputted as follows
+![](figs/basic_props.png)
+
+- Here, you can set your favorite "Tag"
+    - This is very useful to extract selected records during exporting processes
+
+
+## Set chemical properties
+- Move to "PROPERTYCHEMS" for the addition of properties
+- In order to add a new property, clock "+" button.
+
+![](figs/chem_prop.png)
+
+- A new window will open to edit the proeprty name
+- Set properties as follows, for example
+
+![](figs/bp.png)
+
+## Save record
+- After inputting boiling point, click "Save" button to finish recording
+![](figs/save.png)
+
+
+## APPENDIX A: Molecule structures
+## APPENDIX B: Polymer structures

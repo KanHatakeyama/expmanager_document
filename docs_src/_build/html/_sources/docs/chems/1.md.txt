@@ -1,0 +1,28 @@
+# Access Website
+
+## Launch your browser
+- Using your browser, access the server.
+    - access e.g., "http://localhost:8000/"
+        - the address changes with your server configuration
+![access](figs/access.PNG)
+- Click "To Login page"
+
+## Login
+- Enter your user id and pass
+![](figs/login.PNG)
+
+## Admin page
+- You will see an admin page 
+after successful login
+![](figs/admin.png)
+
+- There are three important pages for the Expmanager
+    - Chemical
+        - Register chemical information
+    - Experiment
+        - Register your experiments
+    - Mixture
+        - Register mixtures consisting of chemicals
+
+- Basically, you don't have to access other pages
+

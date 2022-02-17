@@ -1,0 +1,16 @@
+# Overview
+## What can be done?
+- You can record your compound, mixture, and experiment informtion 
+- It is like a digital labolatory notebook
+- The recorded data can be exported into machine-learneable formats
+    - Table
+    - JSON
+    - Graph (networkX object)
+        - not via the GUI interface
+
+![](fig/chemical.png)
+![](fig/about.png)
+
+## How it works?
+- The program works by a Python (django) backend
+- Users can access the program via web viewers

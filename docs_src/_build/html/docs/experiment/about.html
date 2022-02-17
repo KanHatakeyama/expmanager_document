@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. Register experiments &mdash; FlowMaterGUI Manual  documentation</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7. Advanced options of experiments" href="advanced.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> FlowMaterGUI Manual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/1.html">1. Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/1.html#what-can-be-done">1.1. What can be done?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/1.html#how-it-works">1.2. How it works?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../install/1.html">2. Installization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../install/1.html#setup-environment">2.1. Setup Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chems/1.html">3. Access Website</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chems/1.html#launch-your-browser">3.1. Launch your browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/1.html#login">3.2. Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/1.html#admin-page">3.3. Admin page</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chems/chems.html">4. Register chemicals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chems/chems.html#overview">4.1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/chems.html#add-new-reagent">4.2. Add new reagent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/chems.html#set-chemical-properties">4.3. Set chemical properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/chems.html#save-record">4.4. Save record</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/chems.html#appendix-a-molecule-structures">4.5. APPENDIX A: Molecule structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/chems.html#appendix-b-polymer-structures">4.6. APPENDIX B: Polymer structures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chems/mix.html">5. Register mixtures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chems/mix.html#what-are-mixtures">5.1. What are mixtures?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/mix.html#register-a-new-mixture">5.2. Register a new mixture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chems/mix.html#register-new-a-component-chemical">5.3. Register new a component chemical</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../chems/mix.html#register-acetone">5.3.1. Register acetone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../chems/mix.html#register-litfsi">5.3.2. Register LiTFSI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Register experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-are-experiments">6.1. What are experiments?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-simple-experiment">6.2. Example: Simple experiment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation">6.2.1. Preparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-flowchart">6.2.2. View flowchart</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#example-add-another-experiment-with-similar-condition">6.3. Example: Add another experiment with similar condition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">6.3.1. Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-mutual-key">6.3.2. Set mutual key</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#note-what-is-mutual-key">6.3.2.1. NOTE: What is Mutual key?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#duplicate-experiment">6.3.3. Duplicate experiment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-another-experiment">6.3.4. Edit another experiment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#convert-to-table-data">6.3.5. Convert to table data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-converted-data">6.3.6. View converted data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inputting-many-variables-in-a-single-experiment">6.3.7. Inputting many variables in a single experiment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">7. Advanced options of experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#insersion">7.1. Insersion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#about">7.1.1. About</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#how-to-do-this">7.1.2. How to do this</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="advanced.html#prepare-mutual-steps">7.1.2.1. Prepare mutual steps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#integration">7.2. Integration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#id1">7.2.1. About</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#id2">7.2.2. How to do this</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#important-note-during-exporting">7.3. Important note during exporting</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">FlowMaterGUI Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">&lt;no title&gt;</a> &raquo;</li>
+      <li><span class="section-number">6. </span>Register experiments</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/experiment/about.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="register-experiments">
+<h1><span class="section-number">6. </span>Register experiments<a class="headerlink" href="#register-experiments" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-are-experiments">
+<h2><span class="section-number">6.1. </span>What are experiments?<a class="headerlink" href="#what-are-experiments" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Here, you can imagine “Experiments” as a kind of flowrcharts</p></li>
+<li><p>An experiment consist of following components</p>
+<ul>
+<li><p>General information</p>
+<ul>
+<li><p>Title, experimenter, date, …</p></li>
+</ul>
+</li>
+<li><p>Steps</p>
+<ul>
+<li><p>Each experimental protocol is recorded here</p></li>
+<li><p>You can refer chemicals, mixtures, other experiments, etc.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="example-simple-experiment">
+<h2><span class="section-number">6.2. </span>Example: Simple experiment<a class="headerlink" href="#example-simple-experiment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="preparation">
+<h3><span class="section-number">6.2.1. </span>Preparation<a class="headerlink" href="#preparation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Let’s record a very simple experiment:</p>
+<ol class="arabic simple">
+<li><p>Prepare acetone</p></li>
+<li><p>Heat it at 50 oC for 5 min</p></li>
+<li><p>Obtaining relative permittivity of 21</p></li>
+</ol>
+</li>
+<li><p>Move to “Add experiment” page</p></li>
+<li><p>Set basic parameters as you like</p>
+<ul>
+<li><p>You should set “Project”</p>
+<ul>
+<li><p>This value is necessary for exporting processes
+<img alt="" src="../../_images/new_exp.png" /></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Move to the “STEPS” section</p></li>
+<li><p>As the first step, set acetone information</p>
+<ul>
+<li><p>Name: your favorite step name</p></li>
+<li><p>CHEMIAL: select acetone</p></li>
+<li><p>Other forms: Leave as blank
+<img alt="" src="../../_images/acetone.png" /></p></li>
+</ul>
+</li>
+<li><p>Add the second step</p>
+<ul>
+<li><p>Following is an example
+<img alt="" src="../../_images/heat.png" /></p></li>
+</ul>
+</li>
+<li><p>Add the last step</p>
+<ul>
+<li><p>Following is an example
+<img alt="" src="../../_images/perm.png" /></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="view-flowchart">
+<h3><span class="section-number">6.2.2. </span>View flowchart<a class="headerlink" href="#view-flowchart" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Save the experiment</p></li>
+<li><p>Click “View graph” button
+<img alt="" src="../../_images/view_graph.png" /></p></li>
+<li><p>You will see the following kind of graph, if successfully made.
+<img alt="" src="../../_images/graph.png" /></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="example-add-another-experiment-with-similar-condition">
+<h2><span class="section-number">6.3. </span>Example: Add another experiment with similar condition<a class="headerlink" href="#example-add-another-experiment-with-similar-condition" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="overview">
+<h3><span class="section-number">6.3.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Let’s consider the case of changing temperature</p>
+<ul>
+<li><p>Exp1 (same as above)</p>
+<ul>
+<li><p>Prepare acetone</p></li>
+<li><p>Heat it at <strong>50</strong> oC for 5 min</p></li>
+<li><p>Obtaining relative permittivity of <strong>21</strong></p></li>
+</ul>
+</li>
+<li><p>Exp2 (new one: note that the values are imaginary)</p>
+<ul>
+<li><p>Prepare acetone</p></li>
+<li><p>Heat it at <strong>60</strong> oC for <strong>15</strong> min</p></li>
+<li><p>Obtaining relative permittivity of <strong>30</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="set-mutual-key">
+<h3><span class="section-number">6.3.2. </span>Set mutual key<a class="headerlink" href="#set-mutual-key" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Set Mutual key for the two steps
+<img alt="" src="../../_images/mutual_key.png" /></p></li>
+</ul>
+<div class="section" id="note-what-is-mutual-key">
+<h4><span class="section-number">6.3.2.1. </span>NOTE: What is Mutual key?<a class="headerlink" href="#note-what-is-mutual-key" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>“Mutual key” works as a landmark during conversion of graphs into a table</p></li>
+<li><p>Following is an example image, showing the function of “Mutual key”
+<img alt="" src="../../_images/table.png" /></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="duplicate-experiment">
+<h3><span class="section-number">6.3.3. </span>Duplicate experiment<a class="headerlink" href="#duplicate-experiment" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Go back to the experiment view</p></li>
+<li><p>Click “Duplicate experiment” button
+<img alt="" src="../../_images/dup.png" /></p></li>
+<li><p>If you reload the page, a new experiment will appear.
+<img alt="" src="../../_images/duplicated.png" /></p></li>
+</ul>
+</div>
+<div class="section" id="edit-another-experiment">
+<h3><span class="section-number">6.3.4. </span>Edit another experiment<a class="headerlink" href="#edit-another-experiment" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Open the newly generated experiment</p></li>
+<li><p>You can change experiment title as you like</p></li>
+<li><p>Set new values
+<img alt="" src="../../_images/set_new_vals.png" /></p></li>
+</ul>
+</div>
+<div class="section" id="convert-to-table-data">
+<h3><span class="section-number">6.3.5. </span>Convert to table data<a class="headerlink" href="#convert-to-table-data" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>For machine learning, graph-shaped data are often difficult to treat</p></li>
+<li><p>The system can automatically convert graphs into a table data</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Go back to the experiment view</p></li>
+<li><p>Select experiments to be converted</p></li>
+<li><p>Select action</p>
+<ul class="simple">
+<li><p>Export table</p>
+<ul>
+<li><p>Exporting normal table</p></li>
+</ul>
+</li>
+<li><p>Export fingerprinted table</p>
+<ul>
+<li><p>Table with fingerprints</p>
+<ul>
+<li><p>Algorithm</p></li>
+<li><p>https://chemrxiv.org/engage/chemrxiv/article-details/61ee04a671868d22fdbc8856</p></li>
+</ul>
+</li>
+<li><p>JSON</p>
+<ul>
+<li><p>For programmers!</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Click “Go” button</p>
+<ul class="simple">
+<li><p>Conversion takes some time</p></li>
+</ul>
+</li>
+</ol>
+<p><img alt="" src="../../_images/export.png" /></p>
+</div>
+<div class="section" id="view-converted-data">
+<h3><span class="section-number">6.3.6. </span>View converted data<a class="headerlink" href="#view-converted-data" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The converted table can be edited by “D-TALE” module</p>
+<ul>
+<li><p>https://github.com/man-group/dtale</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../../_images/dtale_table.PNG" /></p>
+</div>
+<div class="section" id="inputting-many-variables-in-a-single-experiment">
+<h3><span class="section-number">6.3.7. </span>Inputting many variables in a single experiment<a class="headerlink" href="#inputting-many-variables-in-a-single-experiment" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Split multiple variables with comma (,) to express multiple experiments</p></li>
+<li><p>The following expression equals to four experiments with different variables.</p>
+<ul>
+<li><p>Temperature = 10, permittivity = 1</p></li>
+<li><p>Temperature = 20, permittivity = 20</p></li>
+<li><p>Temperature = 30, permittivity = 20</p></li>
+<li><p>Temperature = 40, permittivity = 50</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../../_images/comma.png" /></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="advanced.html" class="btn btn-neutral float-right" title="7. Advanced options of experiments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Kan Hatakeyama.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
