@@ -11,6 +11,13 @@
 ![](fig/chemical.png)
 ![](fig/about.png)
 
+
+## DEMO Server
+- [Here](https://flowmatergui-hatakeyama.herokuapp.com/)
+    - username: user
+    - pass: user
+- [Check notes](https://github.com/KanHatakeyama/FlowMaterGUI) for details
+
 ## How it works?
 - The program works by a Python (django) backend
-- Users can access the program via web viewers
+- Users can access the program via web browsers 
