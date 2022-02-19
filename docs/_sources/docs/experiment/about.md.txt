@@ -96,13 +96,11 @@
             - For programmers!
 4. Click "Go" button
     - Conversion takes some time
-    
+    - By default, csv files will be downloaded
 ![](figs/export.png)
 
-
 ### View converted data
-- The converted table can be edited by "D-TALE" module
-    - https://github.com/man-group/dtale
+- If you change the setting of "expmanager/utils/sql_converter/table_generator.py" (PANDAS_MODE=False), [dtale module](https://github.com/man-group/dtale) can be used to view the table data
 
 ![](figs/dtale_table.PNG)
 
